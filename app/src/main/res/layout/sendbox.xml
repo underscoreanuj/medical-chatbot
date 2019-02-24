@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    tools:layout_editor_absoluteY="81dp">
+
+
+    <EditText
+        android:id="@+id/msgtyped"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="6"
+        android:background="@drawable/rounded_edittext"
+        android:ems="10"
+        android:hint="Type a message"
+        android:paddingLeft="16dp"
+        android:inputType="textMultiLine"
+        android:linksClickable="true"
+        android:nestedScrollingEnabled="true"
+        android:scrollbars="vertical"
+        android:textColor="@android:color/black"
+        android:textColorHighlight="@color/colorAccent"
+        android:textColorHint="	#A9A9A9"/>
+
+    <Button
+        android:id="@+id/rec_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:background="@drawable/ic_mic"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:elevation="10dp"
+        android:gravity="bottom"
+        android:text="" />
+
+    <Button
+        android:id="@+id/send_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:background="@android:drawable/ic_menu_send"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:elevation="10dp"
+        android:gravity="bottom"
+        android:text="" />
+
+
+</LinearLayout>

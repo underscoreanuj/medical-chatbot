@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "409987024077",
+    "firebase_url": "https://chatbot-med.firebaseio.com",
+    "project_id": "chatbot-med",
+    "storage_bucket": "chatbot-med.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:409987024077:android:558b90dca46812f6",
+        "android_client_info": {
+          "package_name": "com.example.yomna.symptomate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "409987024077-495r1q6lte42i02tc90sivcnks0rkb77.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.yomna.symptomate",
+            "certificate_hash": "f11c8d1b422c9d9ad18aa486419eca6805c3ee88"
+          }
+        },
+        {
+          "client_id": "409987024077-bvkomiq7ejgupknr3s9ii4rosjc621s1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRrZ8DtrH2eOJu3-8x_lyvPiiY29TrlOQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "409987024077-bvkomiq7ejgupknr3s9ii4rosjc621s1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

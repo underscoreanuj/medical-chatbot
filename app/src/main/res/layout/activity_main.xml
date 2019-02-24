@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.yomna.symptomate.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/history_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/history_btn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="History"
+                android:background="#ffffff" />
+            <Button
+                android:id="@+id/nearby_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Common Diseases"
+                android:background="#ffffff" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/chatlist_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:minHeight="300dp"
+        app:layout_constraintBottom_toTopOf="@id/sendbox_layout"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        >
+        <ListView
+            android:id="@+id/chatlist"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:stackFromBottom="true"
+            android:transcriptMode="alwaysScroll"
+            tools:layout_editor_absoluteY="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/sendbox_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:minHeight="48dp"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <EditText
+            android:id="@+id/msgtyped"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:padding="12dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="Type a message"
+            android:linksClickable="true"
+            android:nestedScrollingEnabled="true"
+            android:scrollbars="vertical"
+            android:textColor="@android:color/black"
+            android:textColorHighlight="@color/colorAccent"/>
+
+        <Button
+            android:id="@+id/rec_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ic_mic"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:elevation="10dp"/>
+
+        <Button
+            android:id="@+id/send_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:drawable/ic_menu_send"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:elevation="10dp"/>
+<!--
+        <EditText
+            android:id="@+id/msgtyped"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="32dp"
+            android:paddingBottom="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="6"
+            android:background="@drawable/rounded_edittext"
+            android:ems="10"
+            android:hint="Type a message"
+            android:paddingLeft="16dp"
+            android:inputType="textMultiLine"
+            android:linksClickable="true"
+            android:nestedScrollingEnabled="true"
+            android:scrollbars="vertical"
+            android:textColor="@android:color/black"
+            android:textColorHighlight="@color/colorAccent"
+            android:textColorHint="	#A9A9A9"/>
+
+
+        <Button
+            android:id="@+id/rec_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_mic"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:elevation="10dp"
+            android:gravity="bottom"
+            android:text="" />
+
+        <Button
+            android:id="@+id/send_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:background="@android:drawable/ic_menu_send"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:elevation="10dp"
+            android:gravity="bottom"
+            android:text="" />
+
+            -->
+
+    </LinearLayout>
+
+
+    <!--height for all one line question cards: wrap_content and width: 342-->
+
+</android.support.constraint.ConstraintLayout>
